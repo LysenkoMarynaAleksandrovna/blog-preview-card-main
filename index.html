@@ -21,6 +21,8 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        position: absolute;
+        bottom: 0;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -28,24 +30,34 @@
     </style>
   </head>
   <body>
-    <article class="card">
-      <img
-        class="card__img"
-        src="assets/images/illustration-article.svg"
-        alt="slash image in angle brackets"
-      />
-      <h5>Learning</h5>
-      <p>Published <time> Dec 2023</time></p>
+    <section class="card">
+      <figure class="card__img">
+        <img
+          class="img-content"
+          src="assets/images/illustration-article.svg"
+          alt="slash image in angle brackets"
+        />
+      </figure>
 
-      <h1>HTML & CSS foundations</h1>
+      <article class="card__info">
+        <h5 class="info-direction">Learning</h5>
+        <p class="info-data">Published <time> Dec 2023</time></p>
+        <h1 class="info-header">HTML & CSS foundations</h1>
+        <p class="info-text">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
 
-      <p>
-        These languages are the backbone of every website, defining structure,
-        content, and presentation.
-      </p>
-
-      <footer><b>Greg Hooper</b></footer>
-    </article>
+        <div class="author-block">
+          <img 
+            class="info__profile-image"
+            src="assets/images/image-avatar.webp"
+            alt="photo by Greg Hooper"
+          />
+          <h4>Greg Hooper</h4>
+        </div>
+      </article>
+    </section>
 
     <div class="attribution">
       Challenge by
