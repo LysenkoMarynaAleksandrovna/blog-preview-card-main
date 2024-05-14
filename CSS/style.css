@@ -41,10 +41,12 @@ body {
     border: solid black 1px;
     border-radius: 5%;
     box-shadow: 5px 5px black; 
+    transition: 0.3s;
 }
 
 .card:hover {
-    box-shadow:  10px 10px black; 
+    box-shadow:  14px 14px black; 
+    transition: 0.3s;
 }
 
 .card__info {
@@ -86,10 +88,6 @@ h4 {
     margin: 0;
 }
 
-.info-header:hover {
-    color: hsl(47, 88%, 63%);
-}
-
 .info-data, .info-text{
     font-size: 14px;
 }
@@ -100,4 +98,15 @@ h4 {
 
 .author-name {
     font-size: 12px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.header__link:hover {
+    color: hsl(47, 88%, 63%);
+    transition: 0.3s;
 }
